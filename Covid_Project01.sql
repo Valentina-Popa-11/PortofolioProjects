@@ -1,8 +1,9 @@
 -- Print first 5 rows of both datasets
--- CovidDeaths
+
+	-- CovidDeaths
 SELECT TOP 5 *
 FROM CovidDeaths
--- CovidVaccinations
+	-- CovidVaccinations
 SELECT TOP 5 *
 FROM CovidVaccinations
 
