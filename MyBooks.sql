@@ -23,7 +23,7 @@ SELECT SUM(Volume)
 FROM dbo.MyBooks
 
 -- Create views for later visualisations
-CREATE VIEW TotalBooks AS SELECT COUNT(Exemplare) AS TotalBooks
+CREATE VIEW TotalBooks AS SELECT SUM(Volume) AS TotalBooks
 FROM dbo.MyBooks
 
 -- count how many books are read and unread
@@ -90,7 +90,7 @@ FROM dbo.MyBooks
 GROUP BY Limba
 
 -- Create views for later visualisations
-CREATE VIEW Languages AS SELECT Limba, COUNT(Exemplare) AS PerLanguage
+CREATE VIEW Languages AS SELECT Limba, SUM(Volume) AS PerLanguage
 FROM dbo.MyBooks
 GROUP BY Limba
 
