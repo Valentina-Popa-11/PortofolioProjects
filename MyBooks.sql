@@ -85,7 +85,7 @@ FROM dbo.MyBooks
 WHERE Rating <= 1
 
 -- count how many books are in romanian and how many are in english
-SELECT Limba, COUNT(Exemplare)
+SELECT Limba, SUM(Volume)
 FROM dbo.MyBooks
 GROUP BY Limba
 
