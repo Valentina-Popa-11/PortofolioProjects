@@ -27,7 +27,7 @@ CREATE VIEW TotalBooks AS SELECT COUNT(Exemplare) AS TotalBooks
 FROM dbo.MyBooks
 
 -- count how many books are read and unread
-SELECT Citite, COUNT(Citite) 
+SELECT Citite, SUM(Volume) 
 FROM dbo.MyBooks
 GROUP BY Citite
 
