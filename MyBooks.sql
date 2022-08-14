@@ -95,13 +95,13 @@ FROM dbo.MyBooks
 GROUP BY Limba
 
 -- count how many books are in Romania and how many are in UK
-SELECT Locatie, COUNT(Exemplare)
+SELECT Locatie, SUM(Volume)
 FROM dbo.MyBooks
 WHERE Exemplare >= 0
 GROUP BY Locatie
 
 -- Create views for later visualisations
-CREATE VIEW Location AS SELECT Locatie, COUNT(Exemplare) AS PerLocation
+CREATE VIEW Location AS SELECT Locatie, SUM(Volume) AS PerLocation
 FROM dbo.MyBooks
 WHERE Exemplare >= 0
 GROUP BY Locatie
