@@ -6,3 +6,7 @@
 2nd Project uses the Wholesale fruit and vegetable prices found at the following link: https://www.gov.uk/government/statistical-data-sets/wholesale-fruit-and-vegetable-prices-weekly-average. It contains a series of weekly average wholesale market prices of selected home-grown horticultural produce and it was last updated on 30th of May 2022 before use. This project is a replica of the illusion of increasing purchasing power by raising the minimum wage. 
 
 ---------------
+3rd Project is of purely personal interest, it analyzes the books held in the personal library in both countries, offering an overview.
+
+--------------
+4th Project 
